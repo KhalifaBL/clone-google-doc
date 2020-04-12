@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Doc Clone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main-content">
+      <div class="navbar">
+        <button id="bold-button" onclick="makeItBold()">B</button>
+        <button id="italic-button" onclick="makeItItalic()">I</button>
+        <button id="underlined-button" onclick="makeItUnderlined()">U</button>
+
+        <select name="" id="font-family" onchange="changeFontFamily()">
+          <option value="Arial">Arial</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="Helvetica">Helvetica</option>
+        </select>
+        <select name="" id="font-size" onchange="changeFontSize()">
+          <option value="10px">10px</option>
+          <option value="20px">20px</option>
+          <option value="40px">40px</option>
+          <option value="60px">60px</option>
+        </select>
+        <div id="left-align-container" onclick="leftAlign()">
+          <i class="fas fa-align-left"></i>
+        </div>
+        <div id="center-align-container" onclick="centerAlign()">
+          <i class="fas fa-align-center"></i>
+        </div>
+        <div id="right-align-container" onclick="rightAlign()"><i class="fas fa-align-right"></i></div>
+        <input id="color-input" type="color" onchange="changeColor()" />
+      </div>
+
+      <textarea id="text-input">Lorem, ipsum dolor.</textarea>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

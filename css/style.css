@@ -1,0 +1,19 @@
+.main-content {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+.navbar > * {
+  margin: 3px;
+}
+#text-input {
+  width: 700px;
+  height: 600px;
+  background-color: rgb(243, 245, 245);
+
+  resize: none;
+}
